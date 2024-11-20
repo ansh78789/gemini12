@@ -1,4 +1,4 @@
-.main{
+ .main{
     flex: 1;
     min-height: 100vh;
     padding-bottom: 50vh;
@@ -72,7 +72,6 @@
     max-width: 900px;
     padding: 0px 20px;
     margin: auto;
-    /* background-color: pink; */
     min-width: 90vw;
     display: flex;
     flex-direction: column;
@@ -138,4 +137,49 @@
     max-width: 45vw; 
     padding: 15px 20px;
     border-radius: 8px;
+} 
+
+@media (max-width: 768px) {
+    .main .nav {
+        font-size: 18px;
+    }
+
+    .main .greet {
+        font-size: 40px;
+    }
+
+    .main .cards {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .main .card {
+        height: 150px;
+    }
+
+    .search-box {
+        width: 90%; /* Fit on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main .nav {
+        font-size: 16px;
+    }
+
+    .main .greet {
+        font-size: 32px;
+    }
+
+    .main .cards {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .search-box {
+        width: 100%; /* Fully responsive */
+    }
+
+    .chat-container .single-chat,
+    .chat-container .single-chat-2 {
+        max-width: 90%; /* Adjust for small screens */
+    }
 }
