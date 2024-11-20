@@ -7,10 +7,11 @@ import messageicon from '../../assets/messageicon.jpeg';
 import micicon from '../../assets/micicon.jpeg';
 import sendicon from '../../assets/sendicon.jpeg';
 import usericon from '../../assets/usericon.jpeg';
-import './Main.css';
+import './main.css';
 import gemini from "../../config/gemini";
 
-function Main() {
+const Main =() =>{
+
     const [prompt, setPrompt] = useState("")
     const [chat, setChat] = useState([]);
 
@@ -116,6 +117,6 @@ function Main() {
         </div>
       </div>
     )
-}
-
-export default Main;
+  }
+  export default Main
+  
