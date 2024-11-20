@@ -9,6 +9,7 @@ import sendicon from '../../assets/sendicon.jpeg';
 import usericon from '../../assets/usericon.jpeg';
 import './main.css';
 import gemini from "../../config/gemini";
+
 const Main =() =>{
 
     const [prompt, setPrompt] = useState("")
