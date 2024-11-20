@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import bulb from '../../assets/bulb.jpeg';
 import code from '../../assets/code.jpeg';
 import compass from '../../assets/compass.jpeg';
@@ -9,8 +9,6 @@ import sendicon from '../../assets/sendicon.jpeg';
 import usericon from '../../assets/usericon.jpeg';
 import './main.css';
 import gemini from "../../config/gemini";
-import { context } from "../../context/context";
-
 const Main =() =>{
 
     const [prompt, setPrompt] = useState("")
