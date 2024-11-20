@@ -10,7 +10,7 @@ import usericon from '../../assets/usericon.jpeg';
 import './Main.css';
 import gemini from "../../config/gemini";
 
-function Main() {
+function MainDemo() {
     const [prompt, setPrompt] = useState("")
     const [chat, setChat] = useState([]);
 
@@ -118,4 +118,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default MainDemo;
